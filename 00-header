@@ -25,5 +25,6 @@ if [ -z "$DISTRIB_DESCRIPTION" ] && [ -x /usr/bin/lsb_release ]; then
 	DISTRIB_DESCRIPTION=$(lsb_release -s -d)
 fi
 figlet -f fire $(hostname)
-printf "Welcome to %s (%s %s %s)\n" "$DISTRIB_DESCRIPTION" "$(uname -o)" "$(uname -r)" "$(uname -m)"
+[ "$(date +%m/%d)" = "04/01" ] && figlet -f fire "Welcome to Soviet Russia!"
 [ "$(date +%m/%d)" = "03/14" ] && figlet -f fire "Happy PI day!"
+printf "Welcome to %s (%s %s %s)\n" "$DISTRIB_DESCRIPTION" "$(uname -o)" "$(uname -r)" "$(uname -m)"
