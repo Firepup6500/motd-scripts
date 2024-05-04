@@ -27,4 +27,5 @@ fi
 figlet -f fire $(hostname)
 [ "$(date +%m/%d)" = "04/01" ] && figlet -f fire "Welcome to Soviet Russia!"
 [ "$(date +%m/%d)" = "03/14" ] && figlet -f fire "Happy PI day!"
+[ "$(date +%m/%d)" = "05/04" ] && cowsay -fvader "May the fourth be with you."
 printf "Welcome to %s (%s %s %s)\n" "$DISTRIB_DESCRIPTION" "$(uname -o)" "$(uname -r)" "$(uname -m)"
